@@ -1,0 +1,7 @@
+<h1> Jobs Index</h1>
+<h2> You can see all of the jobs here</h2> 
+
+<% @jobs.each do |job| %>
+  <h3><%= job.title.downcase %></h3>
+  <p><%= job.description %></p>
+<% end %>
